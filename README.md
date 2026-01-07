@@ -1,37 +1,40 @@
-# JupyterLite Demo
+# CrOSSD
 
-[![lite-badge](https://jupyterlite.rtfd.io/en/latest/_static/badge.svg)](https://jupyterlite.github.io/demo)
+A web-based interactive demonstration for exploring and analyzing CrOSSD project data using JupyterLite.
 
-JupyterLite deployed as a static site to GitHub Pages, for demo purposes.
+## Overview
 
-## ✨ Try it in your browser ✨
+This project provides an interactive Jupyter-based interface to the CrOSSD API, allowing users to explore project metrics, retrieve snapshots, and analyze software requirements. The notebook includes examples of fetching project data, querying snapshots, and visualizing project information through an embedded web interface.
 
-➡️ **https://jupyterlite.github.io/demo**
+## Features
 
-![github-pages](https://user-images.githubusercontent.com/591645/120649478-18258400-c47d-11eb-80e5-185e52ff2702.gif)
+- Interactive Jupyter notebooks powered by JupyterLite
+- Direct integration with the CrOSSD API endpoints
+- In-browser data exploration without server setup
+- Access to project listings and snapshot data
+- Real-time data visualization and analysis
 
-## Requirements
+## Browser Execution Considerations
 
-JupyterLite is being tested against modern web browsers:
+- **CORS Proxy**: Uses `https://corsproxy.io/?url=` for bypassing cross-origin restrictions when making API requests
+- **HTTP Requests**: Uses Pyodide's `pyxhr` module instead of the standard `requests` library, which is required for browser-based Python execution
+
+## Browser Requirements
+
+JupyterLite works with modern web browsers:
 
 - Firefox 90+
 - Chromium 89+
 
-## Deploy your JupyterLite website on GitHub Pages
+## Contents
 
-Check out the guide on the JupyterLite documentation: https://jupyterlite.readthedocs.io/en/latest/quickstart/deploy.html
+- [CrOSSD.ipynb](content/CrOSSD.ipynb) - Main notebook with API examples and project analysis
+- [Pipfile](content/Pipfile) - Example Pipfile for use with CrOSSD notebook
+- [requirements.txt](requirements.txt) - Python dependencies for notebooks
 
-## Further Information and Updates
+## Getting Started
 
-For more info, keep an eye on the JupyterLite documentation:
-
-- How-to Guides: https://jupyterlite.readthedocs.io/en/latest/howto/index.html
-- Reference: https://jupyterlite.readthedocs.io/en/latest/reference/index.html
-
-This template provides the Pyodide kernel (`jupyterlite-pyodide-kernel`), the JavaScript kernel (`jupyterlite-javascript-kernel`), and the p5 kernel (`jupyterlite-p5-kernel`), along with other
-optional utilities and extensions to make the JupyterLite experience more enjoyable. See the
-[`requirements.txt` file](requirements.txt) for a list of all the dependencies provided.
-
-For a template based on the Xeus kernel, see the [`jupyterlite/xeus-python-demo` repository](https://github.com/jupyterlite/xeus-python-demo)
+- Visit https://fh-crossd.github.io/demo
+- Open the `CrOSSD.ipynb` notebook to start exploring the CrOSSD API and project data.
 
 
