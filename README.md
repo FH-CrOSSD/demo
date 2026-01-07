@@ -17,7 +17,7 @@ This project provides an interactive Jupyter-based interface to the CrOSSD API, 
 ## Browser Execution Considerations
 
 - **CORS Proxy**: Uses `https://corsproxy.io/?url=` for bypassing cross-origin restrictions when making API requests
-- **HTTP Requests**: Uses Pyodide's `pyxhr` module instead of the standard `requests` library, which is required for browser-based Python execution
+- **HTTP Requests**: Uses Pyodide's `pyxhr` module instead of the `requests` library, which is required for browser-based Python execution
 
 ## Browser Requirements
 
