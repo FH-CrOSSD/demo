@@ -1,4 +1,4 @@
-# CrOSSD
+# CrOSSD Demo
 
 A web-based interactive demonstration for exploring and analyzing CrOSSD project data using JupyterLite.
 
