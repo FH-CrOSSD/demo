@@ -43,3 +43,4 @@ ipyleaflet
 plotly>=6,<7
 bqplot
 rich==14.2.0
+jupyterlite-simple-cors-proxy==0.1.16
